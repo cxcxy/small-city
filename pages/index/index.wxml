@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<!--<view class="container">-->
+    <view class="weui-clooseAddress" catchtap="sureAction" >选择地址</view>
+    <view class="weui-clooseAddress-Text" catchtap="sureAction" >{{cityText}}</view>
+    <view class="weui-clooseAddress-Code" catchtap="sureAction" >{{cityCode}}</view>
+       <view hidden="{{isCity}}" class="selector">
+        <view class="inner_box">
+            <view class="header_box">
+                <view class="item l" data-act="cancel" data-mold="city" bindtap="ideChoice">取消</view>
+                <view class="item c">  </view>
+                <view class="item r" data-act="confirm" data-mold="city" bindtap="ideChoice">确定</view>
+            </view>
+
+            <picker-view class="picker_box" indicator-class="selected" value="{{cityValue}}" bindchange="cityChange">
+                <picker-view-column>
+                    <view wx:for="{{provinces}}">{{item.name}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{citys}}">{{item.name}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view wx:for="{{countys}}" >{{item.name}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+        <view class="layer"></view>
+    </view>

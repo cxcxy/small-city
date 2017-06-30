@@ -1,0 +1,28 @@
+/**index.wxss**/
+
+
+.weui-clooseAddress {display: flex;flex-direction: column; align-items: center;text-align:center;}
+.weui-clooseAddress-Text{ width: 100%;height: 128rpx;text-align: center; margin-top: 50px;}
+.weui-clooseAddress-Code { width: 100%; height: 128rpx;text-align: center; margin-top: 150px;}
+
+
+.section{ padding: 30rpx 0rpx 30rpx 10rpx;overflow: hidden; box-sizing: border-box;}
+
+.section picker{ display: inline-block; width: 50%;}
+.section picker .picker{ color: #333}
+/*选择器*/
+.selector{ width: 100%; position: fixed; bottom: 0; left: 0; z-index: 999999}
+.selector .inner_box{ position: relative; z-index: 999999}
+.selector .header_box{ padding: 25rpx 0; overflow: hidden; box-sizing: border-box; background: white;}
+.selector .header_box .item{ float: left; font-size: 34rpx; color: black; box-sizing: border-box;}
+.selector .header_box .l{ width: 50%; padding-left: 25rpx;}
+/*.selector .header_box .c{ width: 50%; text-align: center}*/
+.selector .header_box .r{ width: 50%; text-align: right; padding-right: 25rpx;}
+.selector .selected{ height: 90rpx;}
+.selector .picker_box{ width: 100%; height: 485rpx; background: #fff;}
+.selector .picker_box picker-view-column{ text-align: center;}
+.selector .picker_box picker-view-column view{ line-height: 90rpx;}
+
+
+
+.selector .layer{ width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10; background:rgba(0,0,0,0.5); }
