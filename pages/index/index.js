@@ -13,7 +13,7 @@ var city_id = ''; // 选择省区 -id
 var countyName = '' // 选择县区 -名字
 var county_id = ''; // 选择省区 -id
 
-// 所有的 省市区 集合 
+// 所有的 省市区 集合  
 var result_province = cityData_new.filter(
   function (value) {
     return (value.level_type == 1);
